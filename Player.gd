@@ -3,6 +3,7 @@ extends KinematicBody2D
 const UP = Vector2( 0, -1)
 
 var motion = Vector2()
+var score = 0
 
 func _physics_process(delta):
 	motion.y += 10

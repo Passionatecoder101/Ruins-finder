@@ -1,0 +1,259 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://floor.png" type="Texture" id=1]
+[ext_resource path="res://goal.png" type="Texture" id=2]
+[ext_resource path="res://goal4.gd" type="Script" id=3]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://wall level 4.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 56.2504, 12.75 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 23.2504, 11.9684 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 46.2504, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 29.2504, 10 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 39.4629, 10 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 53.4629, 10 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 63.4629, 10 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 64, 10 )
+
+[sub_resource type="CircleShape2D" id=9]
+radius = 31.5451
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="floor" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 67.2343, 453.821 )
+texture = ExtResource( 1 )
+
+[node name="floor2" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 85.2343, 453.821 )
+texture = ExtResource( 1 )
+
+[node name="floor3" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 99.8856, 453 )
+texture = ExtResource( 1 )
+
+[node name="floor4" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 116.886, 451 )
+texture = ExtResource( 1 )
+
+[node name="floor5" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 136.886, 452 )
+texture = ExtResource( 1 )
+
+[node name="floor6" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 156.886, 449 )
+texture = ExtResource( 1 )
+
+[node name="floor7" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 171.886, 439 )
+texture = ExtResource( 1 )
+
+[node name="floor8" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 191.886, 439 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 112, 453 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 185, 440 )
+shape = SubResource( 2 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="floor9" type="Sprite" parent="StaticBody2D2"]
+position = Vector2( 230.886, 489 )
+texture = ExtResource( 1 )
+
+[node name="floor10" type="Sprite" parent="StaticBody2D2"]
+position = Vector2( 249.886, 491 )
+texture = ExtResource( 1 )
+
+[node name="floor11" type="Sprite" parent="StaticBody2D2"]
+position = Vector2( 269.886, 490 )
+texture = ExtResource( 1 )
+
+[node name="floor12" type="Sprite" parent="StaticBody2D2"]
+position = Vector2( 289.886, 488 )
+texture = ExtResource( 1 )
+
+[node name="floor13" type="Sprite" parent="StaticBody2D2"]
+position = Vector2( 307.886, 485 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 268, 489 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="floor14" type="Sprite" parent="StaticBody2D3"]
+position = Vector2( 380.872, 431 )
+texture = ExtResource( 1 )
+
+[node name="floor15" type="Sprite" parent="StaticBody2D3"]
+position = Vector2( 400.872, 432 )
+texture = ExtResource( 1 )
+
+[node name="floor" type="Sprite" parent="StaticBody2D3"]
+position = Vector2( 421.25, 430.533 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 400, 429 )
+shape = SubResource( 4 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+
+[node name="floor" type="Sprite" parent="StaticBody2D4"]
+position = Vector2( 493.902, 472.945 )
+texture = ExtResource( 1 )
+
+[node name="floor2" type="Sprite" parent="StaticBody2D4"]
+position = Vector2( 511.902, 472.945 )
+texture = ExtResource( 1 )
+
+[node name="floor3" type="Sprite" parent="StaticBody2D4"]
+position = Vector2( 529.902, 472.945 )
+texture = ExtResource( 1 )
+
+[node name="floor4" type="Sprite" parent="StaticBody2D4"]
+position = Vector2( 548.902, 471.945 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( 521, 472 )
+shape = SubResource( 5 )
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+
+[node name="floor" type="Sprite" parent="StaticBody2D5"]
+position = Vector2( 619.463, 418.677 )
+texture = ExtResource( 1 )
+
+[node name="floor2" type="Sprite" parent="StaticBody2D5"]
+position = Vector2( 635.463, 414.677 )
+texture = ExtResource( 1 )
+
+[node name="floor3" type="Sprite" parent="StaticBody2D5"]
+position = Vector2( 651.463, 420.677 )
+texture = ExtResource( 1 )
+
+[node name="floor4" type="Sprite" parent="StaticBody2D5"]
+position = Vector2( 671.463, 410.677 )
+texture = ExtResource( 1 )
+
+[node name="floor5" type="Sprite" parent="StaticBody2D5"]
+position = Vector2( 687.463, 420.677 )
+texture = ExtResource( 1 )
+
+[node name="floor6" type="Sprite" parent="StaticBody2D5"]
+position = Vector2( 709.463, 410.677 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2( 662, 416 )
+shape = SubResource( 6 )
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+
+[node name="floor7" type="Sprite" parent="StaticBody2D6"]
+position = Vector2( 755.463, 498.677 )
+texture = ExtResource( 1 )
+
+[node name="floor8" type="Sprite" parent="StaticBody2D6"]
+position = Vector2( 777.463, 500.677 )
+texture = ExtResource( 1 )
+
+[node name="floor9" type="Sprite" parent="StaticBody2D6"]
+position = Vector2( 795.463, 498.677 )
+texture = ExtResource( 1 )
+
+[node name="floor10" type="Sprite" parent="StaticBody2D6"]
+position = Vector2( 815.463, 496.677 )
+texture = ExtResource( 1 )
+
+[node name="floor11" type="Sprite" parent="StaticBody2D6"]
+position = Vector2( 837.463, 496.677 )
+texture = ExtResource( 1 )
+
+[node name="floor12" type="Sprite" parent="StaticBody2D6"]
+position = Vector2( 859.463, 488.677 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+position = Vector2( 812, 496 )
+shape = SubResource( 7 )
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+
+[node name="floor" type="Sprite" parent="StaticBody2D7"]
+position = Vector2( 937.463, 456.677 )
+texture = ExtResource( 1 )
+
+[node name="floor2" type="Sprite" parent="StaticBody2D7"]
+position = Vector2( 953.463, 456.677 )
+texture = ExtResource( 1 )
+
+[node name="floor3" type="Sprite" parent="StaticBody2D7"]
+position = Vector2( 971.463, 456.677 )
+texture = ExtResource( 1 )
+
+[node name="floor4" type="Sprite" parent="StaticBody2D7"]
+position = Vector2( 990.125, 457 )
+texture = ExtResource( 1 )
+
+[node name="floor5" type="Sprite" parent="StaticBody2D7"]
+position = Vector2( 1011.12, 456 )
+texture = ExtResource( 1 )
+
+[node name="floor6" type="Sprite" parent="StaticBody2D7"]
+position = Vector2( 1031.12, 455 )
+texture = ExtResource( 1 )
+
+[node name="floor7" type="Sprite" parent="StaticBody2D7"]
+position = Vector2( 1048.12, 454 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
+position = Vector2( 993, 456 )
+shape = SubResource( 8 )
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 990.817, 416 )
+shape = SubResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="Area2D"]
+position = Vector2( 994.49, 418.775 )
+scale = Vector2( 2.66667, 2.5 )
+texture = ExtResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 47.2549, 486 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="wall level 4" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 520.178, 296.151 )
+texture = ExtResource( 5 )
