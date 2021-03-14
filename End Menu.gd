@@ -22,3 +22,7 @@ func _on_Play_Again_pressed():
 
 func _on_Quit_2_pressed():
 	get_tree().quit()
+
+
+func _on_back_to_main_menu_pressed():
+	get_tree().change_scene("res://Start Menu.tscn")

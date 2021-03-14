@@ -35,9 +35,6 @@ extents = Vector2( 23.5685, 30.5 )
 [node name="World" type="Node2D"]
 position = Vector2( 5, 593 )
 
-[node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( -16.7451, -8 )
-
 [node name="platforms" type="Node" parent="."]
 
 [node name="StaticBody2D5" type="StaticBody2D" parent="platforms"]
@@ -714,7 +711,7 @@ __meta__ = {
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground"]
-position = Vector2( 512, 299 )
+position = Vector2( 519, 298 )
 texture = ExtResource( 2 )
 
 [node name="Goal" type="Area2D" parent="."]
@@ -733,3 +730,26 @@ shape = SubResource( 9 )
 position = Vector2( 757.569, 77 )
 scale = Vector2( 1.5, 1.79167 )
 texture = ExtResource( 5 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -42.0
+margin_top = -593.0
+margin_right = 146.0
+margin_bottom = -579.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "score: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( -6.7451, 0 )

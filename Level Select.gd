@@ -26,3 +26,15 @@ func _on_2_pressed():
 
 func _on_3_pressed():
 	get_tree().change_scene("res://level three.tscn")
+
+
+func _on_4_pressed():
+	get_tree().change_scene("res://level four.tscn")
+
+
+func _on_5_pressed():
+	get_tree().change_scene("res://level five.tscn")
+
+
+func _on_6_pressed():
+	get_tree().change_scene("res://level six.tscn")

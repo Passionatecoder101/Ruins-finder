@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://floor.png" type="Texture" id=1]
 [ext_resource path="res://goal.png" type="Texture" id=2]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Goal2.gd" type="Script" id=4]
 [ext_resource path="res://level 2 wall.png" type="Texture" id=5]
+[ext_resource path="res://gameover2.gd" type="Script" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 41.799, 25.7245 )
@@ -23,6 +24,9 @@ extents = Vector2( 260.794, 31.9763 )
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 35.0327, 31.6672 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 508.688, 48.4561 )
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( -19.799, 8.48528 )
@@ -171,3 +175,25 @@ texture = ExtResource( 2 )
 [node name="Sprite" type="Sprite" parent="ParallaxBackground"]
 position = Vector2( 517.602, 294.156 )
 texture = ExtResource( 5 )
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 534.573, 636.397 )
+shape = SubResource( 7 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = 32.0
+margin_top = -9.0
+margin_right = 107.0
+margin_bottom = 5.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "score: 1000"

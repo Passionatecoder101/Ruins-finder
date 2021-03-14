@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://End Menu.gd" type="Script" id=1]
+[ext_resource path="res://level 3 wall .png" type="Texture" id=2]
 
 [node name="End Menu" type="Control"]
 anchor_right = 1.0
@@ -14,31 +15,47 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+[node name="TextureRect" type="TextureRect" parent="CenterContainer"]
+margin_top = 33.0
+margin_right = 1024.0
+margin_bottom = 633.0
+texture = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/TextureRect"]
 margin_left = 467.0
 margin_top = 269.0
 margin_right = 557.0
 margin_bottom = 331.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
-margin_right = 90.0
+[node name="Label" type="Label" parent="CenterContainer/TextureRect/VBoxContainer"]
+margin_right = 136.0
 margin_bottom = 14.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "YOU WIN!"
 
-[node name="Play Again" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Play Again" type="Button" parent="CenterContainer/TextureRect/VBoxContainer"]
 margin_top = 18.0
-margin_right = 90.0
+margin_right = 136.0
 margin_bottom = 38.0
 text = "PLAY AGAIN"
 
-[node name="Quit_2" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Quit_2" type="Button" parent="CenterContainer/TextureRect/VBoxContainer"]
 margin_top = 42.0
-margin_right = 90.0
+margin_right = 136.0
 margin_bottom = 62.0
 text = "QUIT"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Play Again" to="." method="_on_Play_Again_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Quit_2" to="." method="_on_Quit_2_pressed"]
+
+[node name="back to main menu" type="Button" parent="CenterContainer/TextureRect/VBoxContainer"]
+margin_top = 66.0
+margin_right = 136.0
+margin_bottom = 86.0
+text = "Back to main menu"
+[connection signal="pressed" from="CenterContainer/TextureRect/VBoxContainer/Play Again" to="." method="_on_Play_Again_pressed"]
+[connection signal="pressed" from="CenterContainer/TextureRect/VBoxContainer/Quit_2" to="." method="_on_Quit_2_pressed"]
+[connection signal="pressed" from="CenterContainer/TextureRect/VBoxContainer/back to main menu" to="." method="_on_back_to_main_menu_pressed"]
